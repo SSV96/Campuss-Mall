@@ -13,6 +13,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
   await app.listen(configuration().port || 3000);
-  console.log(`Application is running on: ${await app.getUrl()}`);
+  const base = `${await app.getUrl()}`;
+  console.log(`For Documentation: ${base}`);
+  console.log(`Application is running on:  ${base}/api`);
 }
 bootstrap();
