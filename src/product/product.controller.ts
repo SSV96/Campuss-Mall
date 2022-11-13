@@ -22,7 +22,7 @@ export class ProductController {
       'This Api will filters the products based on category or name of the product',
   })
   @Get('/:search/:category')
-  async getProducts(@Param() filter: FilterProductDTO): Promise<Product[]> {
+  async getProducts(@Param() filter?: FilterProductDTO): Promise<Product[]> {
     try {
       if (Object.keys(filter)) {
         const filteredProducts =
