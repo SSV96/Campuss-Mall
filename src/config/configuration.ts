@@ -3,4 +3,8 @@ export default () => ({
   database: {
     host: process.env.DATABASE_HOST,
   },
+  auth: {
+    jwtSecret: process.env.JWT_SECRET,
+    expiresIn: process.env.EXPIRES_IN,
+  },
 });
