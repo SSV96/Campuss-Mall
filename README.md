@@ -60,9 +60,5 @@ $ npm run test:cov
 
 ## Stay in touch
 
-- Author - [Sathya Swaroop Vandavasi]
-- Email - [sathyaswaroopvandavasi@gmail.com]
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Author - Sathya Swaroop Vandavasi
+- Email - sathyaswaroopvandavasi@gmail.com
